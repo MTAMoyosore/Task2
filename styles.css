@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;;
+}
+.card {
+    border: 1px solid rgb(175, 175, 189);
+    max-width: 600px;
+    border-radius: 5px;
+    border-color: lighter;
+}
+.title {
+    font-size: 25px;
+}
+#heading {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.content {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.buttons {
+    color: white;
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgb(0, 153, 255);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus {
+    background: rgb(55, 147, 197);
+}
+.btn.sec {
+    background: none;
+    border: 1px solid rgb(0, 34, 97);
+    color: rgb(0, 162, 255);
+ 
+}
+.btn.sec:hover, .btn.sec:focus {
+    background: rgb(204, 221, 231);
+}
+.btn + .btn {
+    margin-left: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    overflow: none;
+}
+card, .box-shadow {
+    border: none;
+    box-shadow: 0 2px 5px 0 rgb(204, 221, 231);
+}
+img {
+    width: 100%;
+    max-height: 200px;
+    display: block;
+    overflow: hidden;
+    object-position: center;
+    padding: 0;
+    transition: 200ms transform ease-in-out;
+}
+.card:hover > .title.image > img {
+    transform: scale(1.025);
+}
+
+
